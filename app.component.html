@@ -1,0 +1,18 @@
+<app-header  (headEvent)="appHeadClick($event)">
+</app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6" >
+      <app-recipes  *ngIf="flag1==='recipe'"></app-recipes>
+    </div>
+      <div class ="col-md-6" >
+      <app-shopping-list *ngIf="flag1==='shopping'"  >
+
+          <div style="background-color:lightblue">
+              <h3>This is a heading</h3>
+              <p>This is a paragraph.</p>
+            </div>
+      </app-shopping-list>
+    </div>
+  </div>
+</div>
